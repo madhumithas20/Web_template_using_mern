@@ -1,0 +1,14 @@
+.themeChange-btn {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150x;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 2px solid var(--theme-primary);
+  border-radius: 20px;
+  padding: 10px;
+  /* transition: 1s; */
+}

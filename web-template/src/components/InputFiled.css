@@ -1,0 +1,170 @@
+:root {
+  --theme-primary: #fa4659;
+  --theme-secondary: white;
+  --color-primary: black;
+}
+body {
+  background: var(--theme-secondary);
+  color: var(--color-primary);
+  background-repeat: no-repeat;
+}
+.hidden {
+  display: none;
+}
+.input-cont {
+  width: 550px;
+  height: 35px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas: "input-cont-btn-grid input-cont-input-grid input-cont-input-grid input-cont-input-grid input-cont-input-grid input-cont-select-grid";
+  column-gap: 0px;
+  border: 2px solid var(--theme-primary);
+  border-radius: 20px;
+  transition: column-gap 2s;
+}
+
+.input-cont .input-cont-input {
+  grid-area: input-cont-input-grid;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-color: var(--theme-secondary);
+  color: var(--color-primary);
+}
+
+.input-cont .input-cont-input:focus {
+  grid-area: input-cont-input-grid;
+  border: 2px solid transparent;
+  border-radius: 0px 20px 20px 0px;
+  outline: none;
+}
+
+.input-cont .input-cont-btn {
+  grid-area: input-cont-btn-grid;
+  border: 2px solid var(--theme-primary);
+  background-color: var(--theme-primary);
+  border-radius: 20px 0px 00px 20px;
+  font-size: 23px;
+  background-color: var(--theme-primary);
+}
+
+.input-cont .input-cont-icon {
+  background-color: transparent;
+}
+
+.input-cont .input-cont-btn:hover {
+  grid-area: input-cont-btn-grid;
+  border: 2px solid var(--theme-primary);
+  background-color: transparent;
+  border-radius: 20px 0px 00px 20px;
+  color: var(--theme-primary);
+  transition: 0.2s;
+}
+
+.input-cont-select {
+  grid-area: input-cont-select-grid;
+  border: none;
+  border-radius: 20px;
+  background-color:var(--theme-secondary);
+  color: var(--color-primary);
+}
+
+.DictContentFunDiv {
+  background-color: var(--theme-secondary);
+  width: 520px;
+  border: 2px solid var(--theme-primary);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.dictContentWord {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+}
+
+.dictContentWordStatic {
+  display: inline-block;
+}
+
+.dictContentWord .dictContentWordRes {
+  font-size: 20px;
+  color: var(--theme-primary);
+}
+
+.dictContentDef {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+
+.dictContentDef .dictContentDefRes {
+  font-size: 20px;
+  color: var(--theme-primary);
+}
+
+.dictContentPOS {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+}
+
+.dictContentPOS .dictContentPOSRes {
+  font-size: 20px;
+  color: var(--theme-primary);
+}
+
+.DictContentCancelDiv {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.DictContentCancelDiv .DictContentCancelbtn {
+  outline: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.DictContentCancelDiv .DictContentCancelbtn .DictContentCancelIcon {
+  font-size: 20px;
+}
+
+.DictContentCancelDiv .DictContentCancelbtn .DictContentCancelIcon:hover {
+  color: red !important;
+}
+
+.AiContentDiv {
+  background-color: var(--theme-secondary);
+  width: 520px;
+  border: 2px solid var(--theme-primary);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.AiContentDiv .AiContentCancelDiv {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.AiContentCancelDiv button {
+  outline: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.AiContentCancelDiv button .AiContentCancelIcon {
+  font-size: 20px;
+}
+
+.AiContentCancelDiv button .AiContentCancelIcon:hover {
+  color: var(--theme-primary);
+}
